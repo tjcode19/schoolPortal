@@ -1,0 +1,26 @@
+body {
+	font-size: 75.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+table {
+	font-size: 1.3em;
+}
+table th{
+        border-bottom:solid #999 2px;
+        background-color: rgba(0, 51, 255, 0.2);
+        color: rgba(0, 0, 0, 0.7);
+}
+table#re td{
+        border: solid rgba(0,0,0,0.3) 0.5px;
+}
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}

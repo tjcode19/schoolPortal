@@ -1,0 +1,219 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* Colors and backgrounds  ----------------------------------------------------*/body {
+  color: #656360;
+  background: #f1ede8 url(../img/noise-all.png);
+}
+body a:hover {
+  color: #33BEE5;
+}
+a {
+  color: #33BEE5;
+}
+a.sd {
+  padding: 7px
+}
+header,
+footer {
+  background: #33BEE5;
+}
+/* Selection colours (easy to forget) */
+::selection {
+  background: #33BEE5;
+}
+::-moz-selection {
+  background: #33BEE5;
+}
+img::selection {
+  background: #33BEE5;
+}
+img::-moz-selection {
+  background: #33BEE5;
+}
+body {
+  -webkit-tap-highlight-color: #33BEE5;
+}
+#headline,
+.masthead {
+  color: #444444;
+}
+/* NAVIGATION ------------------------------------------------------------*/
+#nav > li > a {
+  color: #dcd2be;
+}
+#nav > li:hover > a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-top: 3px solid #000000;
+}
+#nav span:hover {
+  -webkit-transform: translate(-10px, -3px);
+  -moz-transform: translate(-10px, -3px);
+  -o-transform: translate(-10px, -3px);
+  transform: translate(-10px, -3px);
+}
+#nav > li.current-menu-item > a,
+#nav > li.current_page_item > a {
+  border-top: 3px solid #ffffff;
+}
+#sd > li#active > a {
+  border-left: 3px solid #33BEE5;
+}
+#nav .sfHover ul {
+  background: #f8f5f2;
+}
+#nav .sfHover ul li a {
+  color: #444444;
+}
+#nav .sfHover ul li a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #33BEE5;
+}
+/* MAIN ------------------------------------------------------------*/
+.multiplebgs #main {
+  background-image: url(../img/main-bg.png), url(../img/main-bg.png);
+  background-repeat: repeat-x, repeat-x;
+  background-position: bottom left, top left;
+}
+.no-multiplebgs #main {
+  background: #f1f1f1 url(../img/main-bg.png) repeat-x top left;
+}
+/* FILTERED ITEMS ----------------------------------------------------*/#filter-buttons li a {
+  color: #444;
+  border-bottom: 2px solid transparent;
+}
+#filter-buttons li a:hover,
+#filter-buttons li a.selected {
+  border-bottom: 2px solid #444;
+}
+#filter-container figure {
+  background: #f8f5f2;
+}
+#filter-container figure .thumb {
+  background: #33BEE5 url(../img/icon-link.png) center center no-repeat;
+}
+#filter-container figure figcaption .heading {
+  color: #444444;
+}
+#filter-container figure figcaption .heading:hover {
+  color: #33BEE5;
+}
+#filter-container figure .readmore {
+  color: #444444;
+}
+#filter-container figure .readmore:hover h5 {
+  color: #33BEE5;
+}
+/* PORTFOLIO ----------------------------------------------------*/#portfolio-content #filter-container a {
+  color: #888;
+}
+#portfolio-content #filter-container a:hover {
+  color: #33BEE5;
+}
+#portfolio-content .project-pager a {
+  color: #444444;
+}
+#portfolio-content .project-pager a:hover {
+  color: #33BEE5;
+}
+#portfolio-content #project-box {
+  background: #f8f5f2;
+}
+#portfolio-content #project-box .info .launch:hover {
+  color: #f1f1f1;
+  background: #33BEE5;
+}
+/* RELATED PROJECTS ---------------------------------------------------*/
+.related-projects figure .heading {
+  color: #444444;
+}
+.related-projects figure .heading:hover {
+  color: #33BEE5;
+}
+.related-projects figure .thumb {
+  background: #33BEE5 url(../img/icon-link.png) no-repeat center center;
+}
+/* CONTACT  ----------------------------------------------------*/#map-holder {
+  background: #f8f5f2;
+}
+/* BLOG ------------------------------------------------------------*/
+#posts-list article .box {
+  background: #f8f5f2 url(../img/meta-bg.png) repeat-y top right;
+}
+#posts-list article .box .entry-date {
+  color: #dcd2be;
+  background: #2d2d2d;
+}
+#posts-list article .box .excerpt .post-heading {
+  color: #444444;
+}
+#posts-list article .box .excerpt .post-heading:hover {
+  color: #33BEE5;
+}
+#posts-list article .box .excerpt .learnmore {
+  background: #2d2d2d;
+  color: #f8f5f2;
+}
+#posts-list article .box .excerpt .learnmore:hover {
+  background: #33BEE5;
+}
+#posts-list article .box .meta a {
+  color: #656360;
+}
+#posts-list article .box .meta a:hover {
+  color: #33BEE5;
+}
+#posts-list article.format-standard .feature-image {
+  background: #33BEE5 url(../img/icon-link.png) no-repeat center center;
+}
+#posts-list article.format-image .feature-image {
+  background: #33BEE5 url(../img/icon-popup.png) no-repeat center center;
+}
+body.single #posts-list article {
+  background: #f8f5f2;
+}
+body.single #posts-list .box .meta {
+  background: #f8f5f2 url(../img/meta-bg-vertical.png) repeat-x top right;
+}
+/* PAGE NAVIGATION ------------------------------------------------------------*/
+#main .page-navigation a {
+  color: #444444;
+}
+#main .page-navigation a:hover {
+  color: #33BEE5;
+}
+/* SIDEBAR ------------------------------------------------------------*/
+#sidebar .cat-item a .post-counter,
+#sidebar .page_item a .post-counter {
+  color: #656360;
+}
+#sidebar .cat-item a:hover {
+  -webkit-transform: translate(-10px, -3px);
+  -moz-transform: translate(-10px, -3px);
+  -o-transform: translate(-10px, -3px);
+  transform: translate(-10px, -3px);
+}
+/* SLIDER ----------------------------------------------------*/.lof-slidecontent .slider-description {
+  color: #e6e6e6;
+}
+.lof-slidecontent .slider-description a {
+  color: #FFF;
+}
+.lof-slidecontent .slider-description a.readmore {
+  color: #fcb019;
+}
+.lof-slidecontent .active {
+  border-top: 3px #33BEE5 solid;
+}
+/* FOOTER ----------------------------------------------------*/footer {
+  color: #dcd2be;
+}
+footer h4 {
+  color: #fff;
+}
+footer a {
+  color: #000;
+}
+footer a:hover {
+  color: #fff;
+}

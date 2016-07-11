@@ -1,0 +1,260 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* RECENT POSTS -----------------------------------------------*/
+.recent-post {
+  margin-bottom: 21px;
+}
+.recent-post .thumb {
+  display: block;
+  float: left;
+  background: #f1f1f1;
+  line-height: 0em;
+  padding: 3px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+.recent-post span {
+  display: block;
+}
+/* CAT ITEMS -----------------------------------------------*/
+.widget-cols .cat-item a,
+.widget-cols .page_item a {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background: url(../img/arrow-right.png) no-repeat 0px 0px;
+  padding-left: 17px;
+}
+.widget-cols .cat-item a .post-counter,
+.widget-cols .page_item a .post-counter {
+  color: #f1f1f1;
+}
+.widget-cols .cat-item:last-child a,
+.widget-cols .page_item:last-child a {
+  border-bottom: none;
+}
+/* CAT ITEMS -----------------------------------------------*/
+.widget-block .cat-item a,
+.widget-block .page_item a {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: url(../img/arrow-right.png) no-repeat 0px 0px;
+  padding-left: 17px;
+  z-index: 1001;
+}
+
+#mwindow{
+    width: 100%;
+    min-height:1200px;
+    position: absolute;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#mwindow_in{
+    width: 40%;
+    min-height: 500px;
+    position: relative;
+    margin: 7% auto 18% auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2);
+    
+}
+/* FORM SETTINGS ------------------------------------------------------------*/
+#m input,
+#m select,
+#m textarea{
+  padding: 5px 10px;
+  background: #f1f1f1;
+  color: #484848;
+  border: 1px  solid #ccc;
+  font-size: 13px;
+  font-family: Helvetica, Arial;
+  line-height: 1.5em;
+  overflow: auto;
+}
+#m input:focus,
+#m textarea:focus,
+#m select:focus{
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -moz-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -o-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+}
+#m input[type="text"],
+#m input[type="text"],
+#m input[type="password"],
+#m input[type="password"] {
+  overflow: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+#m textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#m input[type="submit"],
+#m input[type="button"] {
+  width: auto;
+  color: #444;
+  font-size: 12px;
+  background: #eaeaea;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.mm input[type="submit"]:hover,
+.mm input[type="button"]:hover {
+  background: #cb5432;
+}
+.mm input#submit{
+  margin-top: 7px;
+}
+
+.mm input,
+.mm select,
+.mm textarea{
+  padding: 5px 10px;
+  background: #f1f1f1;
+  color: #484848;
+  border: 1px  solid #ccc;
+  font-size: 13px;
+  font-family: Helvetica, Arial;
+  line-height: 1.5em;
+  overflow: auto;
+}
+.mm input:focus,
+.mm textarea:focus,
+.mm select:focus{
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -moz-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -o-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+}
+.mm input[type="text"],
+.mm input[type="text"],
+.mm input[type="password"],
+.mm input[type="password"] {
+  overflow: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+.mm textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mm input[type="submit"],
+.mm input[type="button"] {
+  width: auto;
+  color: #444;
+  font-size: 12px;
+  background: #eaeaea;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.mm input[type="submit"]:hover,
+.mm input[type="button"]:hover {
+  background: #cb5432;
+}
+.mm input#submit{
+  margin-top: 7px;
+}
+
+img#pp{
+    width:190px; 
+    height: 200px; 
+    border: dashed 2px #33BEE5;
+    border-radius: 6px;
+}
+img#id{
+    width:150px; 
+    height: 160px; 
+    border: solid 1px darksalmon;
+    border-radius: 4px;
+}
+img#ss{
+    width: 35px; 
+    height: 35px; 
+    border: dashed 1px darksalmon;
+    border-radius: 6px;
+    margin: 0px;
+    padding: 0px;
+}
+.search-background{
+    position:absolute;
+    margin: auto;
+    z-index: 1001;
+    top: 60px;
+    left: 45%;
+    font-size: 18px;
+	visibility:hidden;
+}
+#container {
+    display: table;
+    width: 100%;
+    }
+  .row  {
+    display: table-row;
+    text-align: center;
+    }
+    
+  #rowth {
+    display: table-row;
+    text-align: center;
+    background-color: #ffe7e0; 
+    color:#cb5432;
+    }
+    
+  .left, .right, .middle {
+    display: table-cell;
+    border-bottom: 1px dashed #cb5432;
+    padding: 5px;
+    }
+    
+  .leftth, .rightth, .middleth {
+    display: table-cell;
+    border-bottom: 2px dashed #cb5432;
+    border-top: 1px dashed #cb5432;    
+    font-size: 17px;
+    padding: 5px;
+    }
+    
+    .roww  {
+    display: table-row;
+    text-align: center;
+    }
+    .roww div{
+       margin: 5px;
+       padding: 5px;
+       font-size: 14px;
+    }
+    span#cont{
+       padding: 4px;
+    }

@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#paging_button ul li{
+    display: inline;
+    font-size: 17px; 
+    padding: 10px;
+    margin:0px;
+}
+#paging_button ul li:hover{
+    display: inline;
+    cursor:pointer;
+}
+/*Payment Record Page */
+.payrec{
+    position: relative;
+    pointer-events: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #cb5432;
+}
+#col1{
+    border: 2px solid #ccc;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+#payrec th{
+    border-bottom: 2px dashed #cb5432;
+    background-color: #ffe7e0;
+}
+#payrec td{
+    border-bottom: 1px dashed #cb5432;
+}
+#det th{
+    border-bottom: 2px dashed #cb5432;
+    border-top: 1px dashed #cb5432;
+    font-size: 17px;
+}
+#det td{
+    border-bottom: 0px;
+}
+#det a{
+    color: #cb5432;
+}
+#det a:hover{
+    color: #ccc;
+}
+a#back{
+    background-image: url('../img/mono-icons/leftturnarrow32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+a#edit{
+    background-image: url('../img/mono-icons/paperpencil32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+a#view{
+    background-image: url('../img/mono-icons/paper32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+a#activate{
+    background-image: url('../img/mono-icons/check32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+a#deactivate{
+    background-image: url('../img/mono-icons/block32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+a#reset{
+    background-image: url('../img/mono-icons/exchange32.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+img.im{
+     border:1px solid #c1c1c1;
+     border-radius: 5px;
+     width: 25px; height: 25px;
+     padding: 5px;
+}
+img.im:hover{
+     border:1px solid #c9c9c9;
+     border-radius: 5px;
+     width: 25px; height: 25px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#paging_button{
+    top:20px;
+    position: relative;
+}

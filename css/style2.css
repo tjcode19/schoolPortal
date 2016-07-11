@@ -1,0 +1,164 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+#upload-wrapper {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	background: #F5F5F5;
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #AAA;
+}
+#upload-wrapper h3 {
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 20px 0px;
+	margin-top: -30px;
+	border-bottom: 1px dotted #DDD;
+}
+#upload-wrapper input[type=file] {
+	border: 1px solid #DDD;
+	padding: 6px;
+	background: #FFF;
+	border-radius: 5px;
+}
+#upload-wrapper #submit-btn {
+	border: none;
+	padding: 10px;
+	background: #61BAE4;
+	border-radius: 5px;
+	color: #FFF;
+}
+#output{
+	padding: 5px;
+	font-size: 12px;
+}
+#output img {
+	border: 1px solid #DDD;
+	padding: 5px;
+}
+
+/*Result Prin Out*/
+#resultpage{
+    position: relative;
+    margin: auto;
+    width: 900px;     
+}
+/*Result Prin Out*/
+#receipt{
+    position: relative;
+    margin: auto;
+    width: 500px;     
+}
+#idpage{
+    position: relative;
+    margin: auto;
+    width: 900px; 
+    min-height: 1200px;
+}
+#logo_res{
+    border-bottom: 1px solid #33BEE5; 
+    background: url(../img/cms.jpg) repeat 0px 0px;
+}
+#logo_receipt{
+    border-bottom: 1px solid #33BEE5; 
+}
+#row1{
+    text-align: center;
+    border-bottom: 2px dotted #33BEE5; 
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#row2{
+    padding: 5px;
+    min-height: 600px;
+}
+#act{ 
+    width: 300px;
+    border: 1px solid #33BEE5; 
+    float: left;
+}
+#comment{ 
+    padding: 5px;
+    width: 550px;
+    margin-left: 325px;
+    border: 1px solid #33BEE5;
+    min-height: 300px;
+}
+#mainp{
+    font-size: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #DDD;
+}
+footer{
+    background: #DDD;
+}
+#mainp table tr th{
+   border-right: 1px solid #DDD; 
+   border-top: 6px solid #33BEE5; 
+}
+#mainp table tr th:last-child{
+   border-right: 0;  
+}
+#mainp table#s tr td{
+   border-right: 1px solid #DDD;
+}
+#mainp table#s tr td:last-child{
+   border-right: 0;  
+}
+#mainp table tr{
+   border-bottom: 1px solid #DDD;  
+}
+#mainp1{
+    font-size: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #DDD;
+}
+#mainp1 table tr th{
+   border-right: 1px solid #DDD; 
+   border-top: 6px solid #78c978; 
+}
+#mainp1 table tr th:last-child{
+   border-right: 0;  
+}
+#mainp1 table#s tr td{
+   border-right: 1px solid #DDD;
+}
+#mainp1 table#s tr td:last-child{
+   border-right: 0;  
+}
+#mainp1 table tr{
+   border-bottom: 1px solid #DDD;  
+}
+p#res{
+    margin-top: 25px;
+}
+
+/*ID CARD PAGE*/
+#mainpid{
+    font-size: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #DDD;
+    min-height: 1200px;
+}
+#mainpid table tr th{
+   border-right: 1px solid #DDD; 
+   border-top: 6px solid #cb5432; 
+}
+#mainpid table tr th:last-child{
+   border-right: 0;  
+}
+#mainpid table#s tr td{
+   border-right: 1px solid #DDD;
+}
+#mainpid table#s tr td:last-child{
+   border-right: 0;  
+}
+#mainpid table tr{
+   border-bottom: 1px solid #DDD;  
+}

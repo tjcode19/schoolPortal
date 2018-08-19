@@ -30,7 +30,7 @@ $term = "";
         }
     
         $session = "<select name=\"sess\" id=\"sess\" >";
-        $log->set_sqlstr("SELECT * FROM Session"); 
+        $log->set_sqlstr("SELECT * FROM session"); 
         $log->querydata();
             for($i=0; $i < $log->no_rec; $i++){
                $session .= "<option value=\"".$log->data[0]."\" ".((isset($_REQUEST['se']) && $_REQUEST['se']==$log->data[0])?"selected":"").

@@ -17,6 +17,7 @@ $log = new login;
                 <li <?php if ($lnk=='scheme.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="scheme.php" >Scheme of Work</a></li>
                 <li <?php if ($lnk=='scheme_edit.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="scheme_edit.php" >Edit Scheme of Work</a></li>
                 <li <?php if ($lnk=='gallery.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="gallery.php" >Photo Gallery</a></li>
+                <li <?php if ($lnk=='manage_sub.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="manage_sub.php" >Manage Subject</a></li>
                 <li <?php if ($lnk=='classlist.php') {echo 'id="active"'; } ?>class="cat-item"><a class="sd" href="classlist.php" >Class List</a></li>
                 <li <?php if ($lnk=='calendar.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="calendar.php" >School Calendar</a></li>
                 <li <?php if ($lnk=='sch_fee_settings.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="sch_fee_settings.php" >School Fee Settings</a></li>

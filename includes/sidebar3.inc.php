@@ -17,6 +17,7 @@ $log = new login;
                 <li <?php if ($lnk=='classlist.php') {echo 'id="active"'; } ?>class="cat-item"><a class="sd" href="classlist.php" >Class List</a></li>
                 <li <?php if ($lnk=='calendar.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="calendar.php" >School Calendar</a></li>              
                 <li <?php if ($lnk=='smsapp.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="smsapp.php" >SMS APP</a></li>
+                <li <?php if ($lnk=='manage_sub.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="manage_sub.php" >Manage Subject</a></li>
                 <li <?php if ($lnk=='qow.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="qow.php" >Set Question</a></li>
                 <li <?php if ($lnk=='qow_list.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="qow_list.php" >Question Bank</a></li>
                 <li <?php if ($lnk=='idcard.php') {echo 'id="active"'; } ?> class="cat-item"><a class="sd" href="idcard.php" >Produce ID Card</a></li>

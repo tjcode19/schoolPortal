@@ -53,7 +53,7 @@ function database(){
 	$this->username = 'root';
 	$this->password = '';
 	$this->con = '';
-	$this->db_name = 'schoolportal_data';
+	$this->db_name = 'demoschool_db';
 	$this->sqlstr = '';
 	$this->status = '';
 

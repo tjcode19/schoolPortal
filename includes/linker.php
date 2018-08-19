@@ -1,6 +1,6 @@
 <?php 
 
-define("Homepage","http://localhost/portal/");
+define("Homepage","http://localhost/DemoPortal/");
 define("root",$_SERVER['DOCUMENT_ROOT']);
 define("Student_Module",Homepage."Student_Module/");
 define("ControlPanel",Homepage."ControlPanel/");

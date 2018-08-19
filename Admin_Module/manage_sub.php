@@ -3,22 +3,22 @@
     require_once ('../includes/linker.php');
     require_once ('../includes/login.inc.php');
      $log = new login;
-    
+     
     $log->verify_login();
     if ($log->logsuccess !=3){
-        header("Location:".Homepage."?err=". $log->logsuccess);
+        header("Location:".Homepage);
     }
     if(isset($_REQUEST['action'])){
 	    if($_REQUEST['action']=='out' && $log->logsuccess != 0) 
 		   {$log->logout(); header("Location:".Homepage);}
-	}  
+	}
 ?>
 <!doctype html> 
 <html class="no-js">
 
     <head>
         <meta charset="utf-8"/>
-        <title>School Portal :: Admin Module :: Personal Data</title>
+        <title>School Portal :: Admin Module :: Manage Subject</title>
 
         <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -93,13 +93,20 @@
 
         <!-- reply move form -->
         <script src="../js/moveform.js"></script>
+		
+		<!-- Datepicker -->
+        <link rel="stylesheet" href="../jquery-box/development-bundle/themes/base/jquery.ui.all.css">
+	
+		<script src="../jquery-box/development-bundle/ui/jquery.ui.core.js"></script>
+		<script src="../jquery-box/development-bundle/ui/jquery.ui.widget.js"></script>
+		<script src="../jquery-box/development-bundle/ui/jquery.ui.datepicker.js"></script>
           
-    <script type="text/javascript">
-       $(document).ready(function(){
-       $("#show").load("../bin/addsta.php",hideLoader());
-       $('.search-background').hide();
-       $('#error').hide();
-       $('#mwindow').hide();
+        <script type="text/javascript">
+           $(document).ready(function(){
+           $("#show").load("../bin_admin/addstu.php",hideLoader());
+	$('.search-background').hide();
+        $('#error').hide();
+        $('#mwindow').hide();
         
 	function showLoader(){
 	
@@ -111,25 +118,69 @@
 		$('.search-background').fadeOut(200);
 	};
         hideLoader;
-        
-        //edit profile picture
+	
 	$("#adds").click(function(){
-            $("#show").load("../bin/addsta.php",hideLoader());
-		$("#mwindow").show();
+        //$("#show").load("student_log.php",hideLoader());
+		//$("#mwindow").show();
+		
+		var win = window.open('add_student.php', '_blank');
+			if(win){
+				//Browser has allowed it to be opened
+				win.focus();
+			}else{
+				//Broswer has blocked it
+				alert('Please allow popups for this site');
+			}
+		
 	});
         
+        $("#paging_button ul li").click(function(){
+		
+		showLoader();
+		
+		$("#paging_button ul li").css({'background-color' : ''});
+		$(this).css({'background-color' : '#FFA500'});
+
+		$("#content").load("../bin_admin/subject_list.php?page=" + this.id, hideLoader);
+		
+		return false;
+	});
+	
+	$("#1").css({'background-color' : '#FFA500'});
 	showLoader();
-	$("#content_home").load("../bin_admin/admin_home.php?page=1", hideLoader);
+	$("#content").load("../bin_admin/subject_list.php?page=1", hideLoader);
 });
 
         </script>
+
     </head>
 
 
     <body class="page">
+        
+            <?php
+
+$per_page = 20;  
+$log->set_sqlstr("select * from subject ");
+$log->querydata(); 
+$count = $log->no_rec;
+$pages = ceil($count/$per_page);
+?>
          <div id="mwindow">
             <div id="mwindow_in">
+                <a href="#" id="close"><img class="alignright" alt="View" title="Close" src="../img/mono-icons/stop32.png" /></a>
                 <div id="show">
+                    <form>
+                    <fieldset>
+                        <p>
+                                        <input type="text" value="" name="surname" id="surname" placeholder="Surname"/>
+                                        <input type="hidden" value="Student" name="pr" id="pr" />
+                        </p>
+                        <p>
+                                        <input type="text" value="" name="firstname" id="firstname" placeholder="First Name"/>
+                        </p>
+                    </fieldset>
+                    </form>
                 </div>
             </div>
         </div> 
@@ -156,7 +207,7 @@
 
                 <!-- masthead -->
                 <div class="masthead cf">
-                    Personal Data
+                    Student Log
                 </div>
                 <!-- ENDS masthead -->
                 
@@ -165,12 +216,32 @@
 
                     <!-- entry-content -->	
                     <div class="entry-content cf">
-                        <div id="content_home">
-                             <div class="search-background">
-                                <label><img src="../img/loader.gif" alt="" /></label>
-                                <p>Please Wait</p>
+                         <div class="search-background">
+                                                <label><img src="../img/loader.gif" alt="" /></label>
+                                                <p>Please Wait</p>
+                                        </div>
+                        <div id="mai" style="margin-bottom: 10px;">
+                            
+                            <form action="" method="post" id="si">
+                            <input type="button" value="Add New Student" id="adds"/>
+                            <input type="text" name="sid" id="sid" value="" Placeholder="Search..."/>
+                            <input type="submit" value="Search"/>
+                            </form>
                         </div>
+                        <div id="content">
+                           
                         </div>
+                        <div id="paging_button" align="center">
+                            <ul>
+                            <?php
+                            //Show page links
+                            for($i=1; $i<=$pages; $i++)
+                            {
+                                    echo '<li id="'.$i.'">'.$i.'</li>';
+                            } ?>
+                            </ul>
+                        </div>
+
                     </div>
                     <!-- ENDS entry content -->
 
@@ -179,7 +250,7 @@
 
                 <!-- sidebar -->
                 <aside id="sidebar">
-                    <?php require_once '../includes/sidebar2.inc.php';?>
+                     <?php require_once '../includes/sidebar2.inc.php';?>
                 </aside>
                 <!-- ENDS sidebar -->
 
@@ -192,10 +263,10 @@
         <!-- FOOTER -->
             <?php require_once '../includes/footer.inc.php';?>
         <!-- ENDS FOOTER -->
-        
-<script type="text/javascript">
+ <script>
 $(document).ready(function(){
-	function showLoader(){
+    
+    function showLoader(){
 	
 		$('.search-background').fadeIn(200);
 	}
@@ -205,25 +276,39 @@ $(document).ready(function(){
 		$('.search-background').fadeOut(200);
 	};
         hideLoader;
-	var Timer  = '';
-	var selecter = 0;
-	var Main =0;
 	
-	bring(selecter);	
+        
+    //callback handler for select change of option for state
+       $('#si').submit(function(e) {
+      showLoader();
+      var c = $("#sid").val();
+      var d = c.replace(" ", "%20");
+      //alert(d);
+      $("#content").load("../bin_admin/student_list.php?page=1&sid="+ d, hideLoader());
+        
+        e.preventDefault(); //STOP default action
+    });
 });
 
-function editpix(us){
-             //showLoader();
-             //var link = this.href; 
-               $("#show").load("../bin_admin/uploadpic1.php?user=" + us );
-               $("#mwindow").show();
-               $("#paging_button").show();
-               //hideLoader();
-	};
-</script>
+function bring ( selecter )
+{	
+	$('div.shopp:eq(' + selecter + ')').stop().animate({
+		opacity  : '1.0',
+		height: '60px'
+		
+	},300,function(){
+		
+		if(selecter < 6)
+		{
+			clearTimeout(Timer); 
+		}
+	});
+	
+	selecter++;
+	var Func = function(){ bring(selecter); };
+	Timer = setTimeout(Func, 20);
+}
 
+    </script>
     </body>
-
-
-
 </html>

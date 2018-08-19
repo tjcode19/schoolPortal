@@ -53,6 +53,7 @@
        }
        return $nstr; 
    }
+   
     function getTyp($po){
 		$log = new login;	
 		$log->database();

@@ -12,7 +12,7 @@
 	    if($_REQUEST['action']=='out' && $log->logsuccess != 0) 
 		   {$log->logout(); header("Location:".Homepage);}
 	}
-		$log->set_sqlstr("SELECT COUNT(*) as recor FROM authentication WHERE status ='2'"); 
+		$log->set_sqlstr("SELECT COUNT(*) as recor FROM authentication WHERE priority=1 and status =2"); 
         $log->querydata();
 		$rec = $log->data['recor'];
         
